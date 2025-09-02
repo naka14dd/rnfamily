@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RN FAMILY - Dashboard</title>
+<title>RN FAMILY - LMBAW9IN</title>
 <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
 
     body {
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(135deg, #1c1c1c, #3d3d3d);
+        background: linear-gradient(135deg, #000, #3d3d3d);
         color: #fff;
     }
 
@@ -22,12 +22,14 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
+        flex-wrap: wrap;
     }
 
     .option {
         flex: 1;
-        height: 400px;
-        border-radius: 15px;
+        min-width: 280px;
+        height: 350px;
+        border-radius: 20px;
         background-color: rgba(255,255,255,0.05);
         backdrop-filter: blur(10px);
         display: flex;
@@ -38,35 +40,50 @@
         transition: transform 0.3s ease, background 0.3s ease;
         text-align: center;
         padding: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     }
 
     .option:hover {
-        transform: translateY(-5px);
+        transform: translateY(-8px);
         background-color: rgba(255,77,77,0.2);
     }
 
     .option h2 {
         margin-bottom: 15px;
-        font-size: 28px;
+        font-size: 26px;
         color: #ff4d4d;
     }
 
     .option p {
         font-size: 16px;
         color: #ccc;
+        line-height: 1.5;
+    }
+
+    header {
+        position: absolute;
+        top: 20px;
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+        font-weight: bold;
+        color: #ff4d4d;
+        letter-spacing: 2px;
     }
 </style>
 </head>
 <body>
 
+<header>🎯 RN FAMILY - LM9AWDIN 🎯</header>
+
 <div class="dashboard-container">
     <div class="option" onclick="window.location.href='roulette.html'">
         <h2>Roulette / Giveaway</h2>
-        <p>Spin the wheel and win amazing prizes!</p>
+        <p>Spin the wheel and try your luck to win cool prizes!</p>
     </div>
-    <div class="option" onclick="alert('Shop clicked!')">
+    <div class="option" onclick="window.location.href='shop.html'">
         <h2>Shop</h2>
-        <p>Buy cool items for your account!</p>
+        <p>Buy exclusive items and upgrades for your account.</p>
     </div>
 </div>
 
