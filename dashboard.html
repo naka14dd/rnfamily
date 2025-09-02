@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RN FAMILY - Dashboard</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1c1c1c, #3d3d3d);
+        color: #fff;
+    }
+
+    .dashboard-container {
+        width: 90%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .option {
+        flex: 1;
+        height: 400px;
+        border-radius: 15px;
+        background-color: rgba(255,255,255,0.05);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .option:hover {
+        transform: translateY(-5px);
+        background-color: rgba(255,77,77,0.2);
+    }
+
+    .option h2 {
+        margin-bottom: 15px;
+        font-size: 28px;
+        color: #ff4d4d;
+    }
+
+    .option p {
+        font-size: 16px;
+        color: #ccc;
+    }
+</style>
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div class="option" onclick="window.location.href='roulette.html'">
+        <h2>Roulette / Giveaway</h2>
+        <p>Spin the wheel and win amazing prizes!</p>
+    </div>
+    <div class="option" onclick="alert('Shop clicked!')">
+        <h2>Shop</h2>
+        <p>Buy cool items for your account!</p>
+    </div>
+</div>
+
+</body>
+</html>
